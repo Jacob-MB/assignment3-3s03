@@ -1,0 +1,269 @@
+{
+  "id": "4505be82-4641-4399-8abc-bed0f8cf97c7",
+  "version": "2.0",
+  "name": "Question4a_Dropdown",
+  "url": "https://the-internet.herokuapp.com/dropdown",
+  "tests": [{
+    "id": "bdb160f9-9f46-4f49-bbea-60a34605225f",
+    "name": "test_select_option1",
+    "commands": [{
+      "id": "e8fc1b3f-e06f-43ce-b6bd-7bcc2d28a713",
+      "comment": "",
+      "command": "open",
+      "target": "https://the-internet.herokuapp.com/dropdown",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a334c5d2-ed29-45cb-b455-126881f2990f",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8028c5e0-bf29-4e64-857b-506ec164eb49",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='1']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7911bba0-11fc-443c-932b-e972701430a2",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "Option 1"
+    }]
+  }, {
+    "id": "25d11dd5-e16e-40d5-a22c-af6692613f8b",
+    "name": "test_options_present",
+    "commands": [{
+      "id": "59bcad68-03a6-4b8c-b715-bcd5fb40887c",
+      "comment": "",
+      "command": "open",
+      "target": "https://the-internet.herokuapp.com/dropdown",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f577f1a2-6b2c-4310-b356-a819bb39d39f",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "Please select an option\\nOption 1\\nOption 2"
+    }]
+  }, {
+    "id": "6c319f08-2372-4fea-ba76-c6691af82b73",
+    "name": "test_select_option2",
+    "commands": [{
+      "id": "93a6c77e-1078-4be8-80ea-7ac7241373d3",
+      "comment": "",
+      "command": "open",
+      "target": "https://the-internet.herokuapp.com/dropdown",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb9978b6-cb8a-4ed6-8c6c-c00d16c2e3fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f4caa8e-b6b1-4f41-92f2-2db06c966b27",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='2']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55578d62-634f-4078-a783-080acf94226a",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "Option 2"
+    }]
+  }, {
+    "id": "5cd59cb1-1466-4660-afe3-8223a3190dd7",
+    "name": "test_switch_to_option1",
+    "commands": [{
+      "id": "ee7e9230-0c35-4f2a-a5c5-d77c8c9051c7",
+      "comment": "",
+      "command": "open",
+      "target": "https://the-internet.herokuapp.com/dropdown",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e31ae8af-cd5a-40b7-9107-fd58b3ab0fd6",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "566fedc1-bec1-4504-bd9f-12977cd9bf8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='2']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ca3ac16-e451-42fd-acee-47665a58ca85",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7d749bc-37ae-4994-b476-88341cd1612a",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='1']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15879de5-75ce-49c3-bf46-8e702c2ca4dc",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "Option 1"
+    }]
+  }, {
+    "id": "e9add772-b3e2-4222-961a-e46d929771b6",
+    "name": "test_switch_to_option2",
+    "commands": [{
+      "id": "10fa3817-d841-495a-acb5-0f171e49aafe",
+      "comment": "",
+      "command": "open",
+      "target": "https://the-internet.herokuapp.com/dropdown",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "085b3a70-e8b9-4858-bcca-f3afc00357b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a3850e1-f188-4299-83b6-bf3bc4cd9e0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='1']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfebba1e-d620-4845-8c80-c1b8e10a69b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e33fc37e-9b00-4107-824d-3bfee452b898",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='2']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6152f2c5-4aa6-4516-9a23-80ed974b87f7",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "Option 2"
+    }]
+  }],
+  "suites": [{
+    "id": "6d5d959f-2485-470e-8426-0ca5889b1023",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bdb160f9-9f46-4f49-bbea-60a34605225f", "25d11dd5-e16e-40d5-a22c-af6692613f8b", "6c319f08-2372-4fea-ba76-c6691af82b73", "5cd59cb1-1466-4660-afe3-8223a3190dd7", "e9add772-b3e2-4222-961a-e46d929771b6"]
+  }],
+  "urls": ["https://the-internet.herokuapp.com/dropdown"],
+  "plugins": []
+}
