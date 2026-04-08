@@ -62,3 +62,33 @@ class TestDefaultSuite():
     selected_text = element.find_element(By.XPATH, locator).text
     assert selected_text == "Option 2"
   
+  def test_testselectoption1fromoption1(self):
+    self.driver.get("https://the-internet.herokuapp.com/dropdown")
+    self.driver.find_element(By.ID, "dropdown").click()
+    self.driver.find_element(By.CSS_SELECTOR, "option:nth-child(2)").click()
+    element = self.driver.find_element(By.ID, "dropdown")
+    locator = "option[@value='{}']".format(element.get_attribute("value"))
+    selected_text = element.find_element(By.XPATH, locator).text
+    assert selected_text == "Option 1"
+    self.driver.find_element(By.ID, "dropdown").click()
+    self.driver.find_element(By.CSS_SELECTOR, "option:nth-child(2)").click()
+    element = self.driver.find_element(By.ID, "dropdown")
+    locator = "option[@value='{}']".format(element.get_attribute("value"))
+    selected_text = element.find_element(By.XPATH, locator).text
+    assert selected_text == "Option 1"
+  
+  def test_testselectoption2fromoption2(self):
+    self.driver.get("https://the-internet.herokuapp.com/dropdown")
+    self.driver.find_element(By.ID, "dropdown").click()
+    self.driver.find_element(By.CSS_SELECTOR, "option:nth-child(3)").click()
+    element = self.driver.find_element(By.ID, "dropdown")
+    locator = "option[@value='{}']".format(element.get_attribute("value"))
+    selected_text = element.find_element(By.XPATH, locator).text
+    assert selected_text == "Option 2"
+    self.driver.find_element(By.ID, "dropdown").click()
+    self.driver.find_element(By.CSS_SELECTOR, "option:nth-child(3)").click()
+    element = self.driver.find_element(By.ID, "dropdown")
+    locator = "option[@value='{}']".format(element.get_attribute("value"))
+    selected_text = element.find_element(By.XPATH, locator).text
+    assert selected_text == "Option 2"
+  

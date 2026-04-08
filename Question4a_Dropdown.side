@@ -255,6 +255,160 @@
       "targets": [],
       "value": "Option 2"
     }]
+  }, {
+    "id": "b9027308-7221-459e-a7aa-97821427800d",
+    "name": "test_select_option1_from_option1",
+    "commands": [{
+      "id": "3c9bb0ab-57e1-4b66-887e-b75ca9ab951c",
+      "comment": "",
+      "command": "open",
+      "target": "https://the-internet.herokuapp.com/dropdown",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80e94a58-1f14-453e-aad7-b54abd629602",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74bd3cbe-00fe-41c3-903d-8ef46005dc21",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='1']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2e874b6-9ae1-4ab4-a87a-fb8dee50be2e",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "Option 1"
+    }, {
+      "id": "39300836-5cf6-4b15-88fb-740955ee953c",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43172c1f-985b-48b3-89fe-6e761d27acd4",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='1']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be7cb83a-6a35-4963-b821-81aee1c5c1ba",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "Option 1"
+    }]
+  }, {
+    "id": "96beedf1-90ce-4fdc-938f-a40873491290",
+    "name": "test_select_option2_from_option2",
+    "commands": [{
+      "id": "b590e98f-5468-4dc7-b4cf-68116bf0bd98",
+      "comment": "",
+      "command": "open",
+      "target": "https://the-internet.herokuapp.com/dropdown",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6db18d21-3b3f-42d3-a3f2-1ee85e083e75",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "706447eb-deb3-4625-bd9d-0ec8a77ce48d",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='2']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54312067-7409-46f0-88e5-b58aa352094a",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "Option 2"
+    }, {
+      "id": "5078ce71-bf31-4b8e-ba64-8891444e240d",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "601e2baa-6750-45b9-b3e6-6ac4056d051a",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='2']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "179ac4bd-3f42-42a2-a922-f5e9fa00101e",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "Option 2"
+    }]
   }],
   "suites": [{
     "id": "6d5d959f-2485-470e-8426-0ca5889b1023",
@@ -262,7 +416,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["bdb160f9-9f46-4f49-bbea-60a34605225f", "25d11dd5-e16e-40d5-a22c-af6692613f8b", "6c319f08-2372-4fea-ba76-c6691af82b73", "5cd59cb1-1466-4660-afe3-8223a3190dd7", "e9add772-b3e2-4222-961a-e46d929771b6"]
+    "tests": ["bdb160f9-9f46-4f49-bbea-60a34605225f", "25d11dd5-e16e-40d5-a22c-af6692613f8b", "6c319f08-2372-4fea-ba76-c6691af82b73", "5cd59cb1-1466-4660-afe3-8223a3190dd7", "e9add772-b3e2-4222-961a-e46d929771b6", "b9027308-7221-459e-a7aa-97821427800d", "96beedf1-90ce-4fdc-938f-a40873491290"]
   }],
   "urls": ["https://the-internet.herokuapp.com/dropdown"],
   "plugins": []
